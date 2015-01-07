@@ -12,12 +12,13 @@
     <h1>AngularUI Slider demo</h1>
 
         <strong>Pick a number, any number</strong>
-        <div ui-slider="{value: '15000'}" min="10000" max="35000" step="500" value="15000" ng-model="demoVals.sliderExample1"></div>
+        <div ui-slider="{value: '5000'}" min="10000" max="35000" step="500" ng-model="demoVals.sliderExample1"></div>
         <input type="text" ng-model="demoVals.sliderExample1" />    
     </div>
 
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+
     <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>  
     <script type="text/javascript" src="bower_components/angular-ui-slider/src/slider.js"></script>    
     <script>
@@ -25,7 +26,7 @@
         
         app.controller('sliderDemoCtrl', function($scope) {    
             $scope.demoVals = {
-                sliderExample1:     15000,
+                sliderExample1:     35000,
             };
 
         });
